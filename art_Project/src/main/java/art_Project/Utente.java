@@ -9,10 +9,12 @@ public class Utente {
 		private Date data_nascita;
 		private boolean diritto_voto;
 		private String comune_residenza;
+		private String sesso;
 		
-		public Utente (String nom, String cog, String cf, Date nascita, boolean drt_vt, String com_res) {		//Costruttore Utente
+		public Utente (String nom, String cog, String se, String cf, Date nascita, boolean drt_vt, String com_res) {		//Costruttore Utente
 			this.nome=nom;
 			this.cognome=cog;
+			this.sesso=se;
 			this.codice_fiscale=cf;
 			//this.data_nascita=nascita;
 			this.diritto_voto=drt_vt;
@@ -25,6 +27,10 @@ public class Utente {
 	
 	public String get_cognome() {
 		return this.cognome;
+	}
+	
+	public String get_sesso() {
+		return this.sesso;
 	}
 	
 	public String get_cf() {
@@ -49,6 +55,10 @@ public class Utente {
 	
 	public void set_cognome(String c) {
 		this.cognome=c;
+	}
+	
+	public void set_sesso(String s) {
+		this.sesso=s;
 	}
 	
 	public void set_cf(String cf) {

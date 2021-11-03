@@ -16,7 +16,7 @@ public class Utente {
 			this.cognome=cog;
 			this.sesso=se;
 			this.codice_fiscale=cf;
-			//this.data_nascita=nascita;
+			this.data_nascita=(Date) nascita.clone();
 			this.diritto_voto=drt_vt;
 			this.comune_residenza=com_res;
 		}
